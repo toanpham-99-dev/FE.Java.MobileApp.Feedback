@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_assignment1"
+            android:icon="@drawable/ic_outline_home_24"
+            android:title="HOMEPAGE" />
+        <item
+            android:id="@+id/nav_trainee_dashboard"
+            android:icon="@drawable/ic_outline_home_24"
+            android:title="HOMEPAGE" />
+        <item
+            android:id="@+id/nav_assignment"
+            android:icon="@drawable/ic_outline_shopping_bag_24"
+            android:title="ASSIGNMENT" />
+        <item
+            android:id="@+id/nav_classs"
+            android:icon="@drawable/ic_baseline_supervisor_account_24"
+            android:title="CLASS" />
+        <item
+            android:id="@+id/nav_module"
+            android:icon="@drawable/ic_outline_account_balance_wallet_24"
+            android:title="MODULE" />
+        <item
+            android:id="@+id/nav_enrrollment"
+            android:icon="@drawable/ic_outline_calendar_today_24"
+            android:title="ENROLLMENT" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_outline_textsms_24"
+            android:title="FEEDBACK" />
+        <item
+            android:id="@+id/nav_statisticdofeedback"
+            android:icon="@drawable/ic_outline_feed_24"
+            android:title="RESULT" />
+        <item
+            android:id="@+id/nav_question"
+            android:icon="@drawable/ic_outline_error_outline_24"
+            android:title="QUESTION" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_outline_call_24"
+            android:title="CONTACT" />
+        <!--
+        <item
+            android:id="@+id/nav_trainee_dashboard"
+            android:icon="@drawable/ic_outline_logout_24"
+            android:title="Trainee dashboard" />
+        -->
+        <item
+            android:id="@+id/nav_join"
+            android:icon="@drawable/ic_join"
+            android:title="JOIN" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_outline_logout_24"
+            android:title="LOG OUT" />
+
+
+        <!-- <item
+            android:id="@+id/nav_joinmodule"
+            android:icon="@drawable/ic_outline_draw_24"
+            android:title="JOIN" />-->
+
+    </group>
+</menu>

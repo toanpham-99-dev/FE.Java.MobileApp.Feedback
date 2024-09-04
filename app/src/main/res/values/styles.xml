@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="notifyWarning">
+        <item name="android:textColor">#D3443A</item>
+    </style>
+</resources>

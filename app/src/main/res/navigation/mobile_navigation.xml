@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_homepage">
+
+    <fragment
+        android:id="@+id/nav_homepage"
+        android:name="com.example.feedbackapp.ui.homepage.HomePageFragment"
+        tools:layout="@layout/fragment_homepage">
+        <action
+            android:id="@+id/home_to_trainee_dashboard"
+            app:destination="@+id/nav_trainee_dashboard"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_assignment"
+        android:name="com.example.feedbackapp.ui.assignment.AssignmentFragment"
+        tools:layout="@layout/fragment_assignment">
+
+        <action
+            android:id="@+id/assignment_to_add_assignment"
+            app:destination="@+id/nav_add_assignment"/>
+        <action
+            android:id="@+id/assignment_to_edit_assignment"
+            app:destination="@+id/nav_edit_assignment"/>
+        <action
+            android:id="@+id/assignment_to_search_assignment"
+            app:destination="@+id/nav_search_assignment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_assignment1"
+        android:name="com.example.feedbackapp.ui.assignment.AssignmentFragment"
+        tools:layout="@layout/fragment_assignment">
+
+        <action
+            android:id="@+id/assignment_to_add_assignment"
+            app:destination="@+id/nav_add_assignment"/>
+        <action
+            android:id="@+id/assignment_to_edit_assignment"
+            app:destination="@+id/nav_edit_assignment"/>
+        <action
+            android:id="@+id/assignment_to_search_assignment"
+            app:destination="@+id/nav_search_assignment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search_assignment"
+        android:name="com.example.feedbackapp.ui.assignment.SearchAssignmentFragment"
+        tools:layout="@layout/fragment_search_assignment">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_assignment"
+        android:name="com.example.feedbackapp.ui.assignment.AddAssignmentFragment"
+        tools:layout="@layout/fragment_add_assignment">
+
+        <action
+            android:id="@+id/add_assignment_to_assignment"
+            app:destination="@+id/nav_assignment"/>/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_assignment"
+        android:name="com.example.feedbackapp.ui.assignment.EditAssignmentFragment"
+        tools:layout="@layout/fragment_edit_assignment">
+
+        <action
+            android:id="@+id/edit_assignment_to_assignment"
+            app:destination="@+id/nav_assignment"/>/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_classs"
+        android:name="com.example.feedbackapp.ui.classs.ClasssFragment"
+        tools:layout="@layout/fragment_classs">
+
+        <action
+            android:id="@+id/class_to_list_trainee"
+            app:destination="@+id/nav_show_trainee_of_class"/>
+        <action
+            android:id="@+id/class_to_add_edit_class"
+            app:destination="@+id/nav_add_edit_class"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_show_trainee_of_class"
+        android:name="com.example.feedbackapp.ui.classs.ShowTraineeOfClassFragment"
+        tools:layout="@layout/show_trainee_of_class_fragment">
+        <action
+            android:id="@+id/show_trainee_back_to_class"
+            app:destination="@+id/nav_classs"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_edit_class"
+        android:name="com.example.feedbackapp.ui.classs.ClassAddEditFragment"
+        tools:layout="@layout/class_add_edit_fragment" >
+
+        <action
+            android:id="@+id/add_edit_back_to_class"
+            app:destination="@+id/nav_classs"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_module"
+        android:name="com.example.feedbackapp.ui.module.ModuleFragment"
+        tools:layout="@layout/module_fragment">
+
+        <action
+            android:id="@+id/module_to_add_module"
+            app:destination="@+id/nav_add_edit_module"/>
+
+        <action
+            android:id="@+id/module_to_edit_module"
+            app:destination="@+id/nav_edit_module"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_edit_module"
+        android:name="com.example.feedbackapp.ui.module.AddEditModuleFragment"
+        tools:layout="@layout/add_edit_module_fragment" />
+    <fragment
+        android:id="@+id/nav_enrrollment"
+        android:name="com.example.feedbackapp.ui.enrrollment.EnrrollmentFragment"
+        tools:layout="@layout/enrrollment_fragment" />
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.feedbackapp.ui.feedback.FeedBackFragment"
+        tools:layout="@layout/feedback_fragment" />
+   <!--<fragment
+        android:id="@+id/nav_result"
+       android:name="com.example.feedbackapp.ui.statisticfeedback.StatisticFeedBackFragment"
+       tools:layout="@layout/statistic_feedback_fragment" />-->
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.example.feedbackapp.ui.question.QuestionFragment"
+        tools:layout="@layout/question_fragment">
+
+        <action
+            android:id="@+id/question_to_add_question"
+            app:destination="@+id/nav_add_question"/>
+        <action
+            android:id="@+id/question_to_edit_question"
+            app:destination="@+id/nav_edit_question"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_add_question"
+        android:name="com.example.feedbackapp.ui.question.AddQuestionFragment"
+        tools:layout="@layout/fragment_add_question">
+
+        <action
+            android:id="@+id/add_question_to_question"
+            app:destination="@+id/nav_question"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_edit_question"
+        android:name="com.example.feedbackapp.ui.question.EditQuestionFragment"
+        tools:layout="@layout/fragment_edit_question">
+
+        <action
+            android:id="@+id/edit_question_to_question"
+            app:destination="@+id/nav_question"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.feedbackapp.ui.contact.ContactFragment"
+        tools:layout="@layout/contact_fragment" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.feedbackapp.ui.logout.LogOutFragment"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_add_feedback"
+        android:name="com.example.feedbackapp.ui.feedback.Add_Feedback"
+        tools:layout="@layout/fragment_add__feedback" />
+    <fragment
+        android:id="@+id/nav_review_new_feedback"
+        android:name="com.example.feedbackapp.ui.feedback.Review_NewFeedbackFragment"
+        tools:layout="@layout/fragment_review__new_feedback" />
+    <fragment
+        android:id="@+id/nav_feedbackright"
+        android:name="com.example.feedbackapp.ui.statisticfeedback.FeedbackRightFragment"
+        tools:layout="@layout/feedback_right_fragment" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment1"
+            app:destination="@id/nav_feedback" />
+        <action
+            android:id="@+id/action_feedbackright_to_feedbackdetail"
+            app:destination="@id/nav_feedbackdetail" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_feedbackdetail"
+        android:name="com.example.feedbackapp.ui.statisticfeedback.FeedbackDetailFragment"
+        tools:layout="@layout/fragment_feedback_detail" />
+    <action
+        android:id="@+id/action_feedbackdetail_to_feedback"
+        app:destination="@id/nav_feedback" />
+    <fragment
+        android:id="@+id/nav_dofeedback"
+        android:name="com.example.feedbackapp.ui.statisticfeedback.DoFeedbackFragment"
+        tools:layout="@layout/fragment_do_feedback" >
+        <action
+            android:id="@+id/action_dofeedback_to_listfeedback"
+            app:destination="@id/nav_trainee_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_statisticdofeedback"
+        android:name="com.example.feedbackapp.ui.statisticfeedback.StatisticFeedBackFragment"
+        tools:layout="@layout/statistic_feedback_fragment" />
+
+    <fragment
+        android:id="@+id/nav_trainee_dashboard"
+        android:name="com.example.feedbackapp.ui.dashboard.TraineeDashboardFragment"
+        tools:layout="@layout/fragment_trainee_dashboard">
+        <action
+            android:id="@+id/action_listFeedback_to_doFeedback"
+            app:destination="@+id/nav_dofeedback"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_viewcommentfeedback"
+        android:name="com.example.feedbackapp.ui.statisticfeedback.ViewCommentFragment"
+        tools:layout="@layout/fragment_view_comment" />
+
+    <fragment
+        android:id="@+id/nav_add_module"
+        android:name="com.example.feedbackapp.ui.module.AddModuleFragment"
+        tools:layout="@layout/add_module_layout"/>
+
+    <fragment
+        android:id="@+id/nav_edit_feedback"
+        android:name="com.example.feedbackapp.ui.feedback.Fragment_Edit_Feedback"
+        tools:layout="@layout/fragment__edit__feedback"/>
+    <fragment
+        android:id="@+id/nav_detail_feedback"
+        android:name="com.example.feedbackapp.ui.feedback.Fragment_Detail_Feedback"
+        tools:layout="@layout/fragment__detail__feedback"/>
+    <fragment
+        android:id="@+id/nav_review_edit_feedback"
+        android:name="com.example.feedbackapp.ui.feedback.Review_Edit_Feedback"
+        tools:layout="@layout/fragment_review__edit__feedback"/>
+
+
+    <fragment
+        android:id="@+id/nav_edit_module"
+        android:name="com.example.feedbackapp.ui.module.AddEditModuleFragment"
+        tools:layout="@layout/add_edit_module_fragment">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_join"
+        android:name="com.example.feedbackapp.ui.dashboard.TraineeDashboardFragment"
+        tools:layout="@layout/fragment_trainee_dashboard">
+    </fragment>
+
+</navigation>

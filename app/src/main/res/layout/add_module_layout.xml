@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/txt_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Module List"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <!--        MODULE NAME-->
+            <LinearLayout
+                android:id="@+id/moduleNameWrap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/txt_LabelModuleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Module Name"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:id="@+id/txt_AddModuleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/rounded_radius"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+
+            <!--        START DATE-->
+            <LinearLayout
+                android:id="@+id/moduleStartDateWrap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/txt_LabelStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:background="@drawable/rounded_radius">
+
+                    <EditText
+                        android:id="@+id/txt_AddModuleStartDate"
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
+                        android:background="@drawable/bg_transparent"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_calender_foreground"
+                        android:layout_marginRight="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--        END DATE-->
+            <LinearLayout
+                android:id="@+id/moduleEndDateWrap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/txt_ModuleEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:background="@drawable/rounded_radius">
+
+                    <EditText
+                        android:id="@+id/txt_AddModuleEndDate"
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"
+                        android:background="@drawable/bg_transparent"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_calender_foreground"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--        ADMIN ID-->
+            <TextView
+                android:id="@+id/txt_LabelAdminID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin ID"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_radius"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/spn_listAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_spinner"/>
+
+            </LinearLayout>
+
+            <!--        FEEDBACK TITLE-->
+            <TextView
+                android:id="@+id/txt_LabelFeedbackTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feedback Title"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_radius"
+                android:layout_marginBottom="16dp"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/spn_listFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/background_spinner"/>
+
+            </LinearLayout>
+
+            <!--        FEEDBACK START DATE-->
+            <LinearLayout
+                android:id="@+id/moduleFeedbackStartDateWrap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/txt_LabelFeedbackStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback Start Date"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:background="@drawable/rounded_radius"
+                    >
+
+                    <EditText
+                        android:id="@+id/txt_AddModuleFeedbackStartDate"
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:background="@drawable/bg_transparent"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"/>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_calender_foreground"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--        FEEDBACK END DATE-->
+            <LinearLayout
+                android:id="@+id/moduleFeedbackEndDateWrap"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/txt_LabelFeedbackEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback End Date"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10"
+                    android:background="@drawable/rounded_radius">
+
+                    <EditText
+                        android:id="@+id/txt_AddModuleFeedbackEndDate"
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:background="@drawable/bg_transparent"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="8dp"/>
+
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_calender_foreground"
+                        android:layout_marginRight="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/btn_SaveAddModule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_marginRight="8dp"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/btn_blue_radius"
+                    android:minHeight="0dp"/>
+
+                <Button
+                    android:id="@+id/btn_BackAddModule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/btn_red_radius"
+                    android:minHeight="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

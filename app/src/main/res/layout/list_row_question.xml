@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="4dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionName"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginStart="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+   <!-- <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        >-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="27dp"
+            >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <RadioButton
+            android:id="@+id/radiostrongdisagree"
+            android:text="Strongly Disagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioneutral"
+            android:text="UnDecided"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radiostrongagree"
+            android:text="Strong Agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="40dp"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radiadisagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DisAgree" />
+
+        <RadioButton
+            android:id="@+id/radioagree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree" />
+          </LinearLayout>
+        </LinearLayout>
+    <!--  </RadioGroup>-->
+</LinearLayout>

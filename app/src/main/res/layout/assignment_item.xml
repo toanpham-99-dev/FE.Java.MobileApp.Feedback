@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView_idTopic"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="15dp"
+                android:text="No: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_topicName"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Module Name: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/textView_idTopic"
+                app:layout_constraintTop_toBottomOf="@+id/textView_idTopic" />
+
+            <TextView
+                android:id="@+id/textView_questionId"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Class Name: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/textView_topicName"
+                app:layout_constraintTop_toBottomOf="@+id/textView_topicName" />
+
+            <TextView
+                android:id="@+id/textView_questionContent"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Trainer Name: "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/textView_questionId"
+                app:layout_constraintTop_toBottomOf="@+id/textView_questionId" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="RegistrationCode:"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView_questionContent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_questionContent" />
+
+            <TextView
+                android:id="@+id/textView_rCode"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="123"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+
+            android:id="@+id/btn_edit_assignment"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="312dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            app:srcCompat="@drawable/edit40x40" />
+
+        <ImageView
+            android:id="@+id/btn_delete_assignment"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+
+            app:layout_constraintStart_toStartOf="@+id/btn_edit_assignment"
+            app:layout_constraintTop_toBottomOf="@+id/btn_edit_assignment"
+            app:srcCompat="@drawable/delete40x40" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
